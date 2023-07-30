@@ -1,0 +1,34 @@
+.t-fb {
+  color: $fb;
+}
+.t-tw {
+  color: $tw;
+}
+.t-ins {
+  color: $ins;
+}
+.t-in {
+  color: $in;
+}
+.t-be {
+  color: $be;
+}
+.t-text-primary {
+  color: $primary;
+}
+.heading-font {
+  font-family: $heading-font;
+}
+
+// font icon color
+.t-text {
+  &-alpha {
+    color: $primary;
+  }
+  &-gamma {
+    color: #f0bb00;
+  }
+  &-white {
+    color: $white;
+  }
+}

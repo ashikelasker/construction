@@ -1,0 +1,103 @@
+.bttn {
+  box-shadow: 0 5px 15px rgba($primary, 0.3);
+  transition: all 0.3s ease;
+  &:hover {
+    box-shadow: 0 5px 20px rgba($primary, 0.7);
+  }
+  &-round {
+    border-radius: 50px;
+  }
+  &-semi-round {
+    border-radius: 40px 5px 40px 5px;
+  }
+  &-sm {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 55px;
+    padding-right: 55px;
+    font-size: 12px;
+    font-weight: 400;
+    &-hover {
+      &:hover {
+        box-shadow: 0 20px 35px rgba($primary, 0.3);
+      }
+    }
+  }
+  &-md {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &-xl {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &-primary {
+    background-color: $primary;
+    transition: all 0.3s ease;
+    color: $white;
+    background-image: radial-gradient(
+      circle,
+      transparent 1%,
+      darken($primary, 8%) 1%
+    );
+    background-position: center;
+    background-size: 15000%;
+    &:hover {
+      color: $white;
+      background-color: $primary;
+      background-size: 100%;
+    }
+    &:active {
+      background-color: $primary;
+      background-size: 15000%;
+    }
+    &-transparent {
+      //   background-color: rgba($primary, 0.1);
+      transition: all 0.3s ease;
+      color: $primary;
+      font-weight: 600;
+      border: 1px solid $primary;
+    }
+  }
+  &-white {
+    background-color: $white;
+    transition: all 0.3s ease;
+    color: $primary;
+    background-image: radial-gradient(
+      circle,
+      transparent 1%,
+      darken($white, 8%) 1%
+    );
+    background-position: center;
+    background-size: 15000%;
+    &:hover {
+      color: $primary;
+      background-color: $white;
+      background-size: 100%;
+    }
+    &:active {
+      background-color: $white;
+      background-size: 15000%;
+    }
+    &-transparent {
+      //   background-color: rgba($primary, 0.1);
+      transition: all 0.3s ease;
+      color: $white;
+      font-weight: 400;
+      border: 1px solid $white;
+      background: transparent;
+    }
+  }
+}
+
+.btn-iconr {
+  font-size: 12px;
+}

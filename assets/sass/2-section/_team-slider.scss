@@ -1,0 +1,52 @@
+.team-slider {
+  &__item {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  .slick-arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid $white;
+    transition: all 0.3s ease;
+    position: absolute;
+    right: 0;
+    z-index: 90;
+    &:hover {
+      box-shadow: 0 20px 35px rgba($primary, 0.3);
+    }
+  }
+  .slick-prev {
+    background: $white;
+    color: $black;
+    left: 40%;
+    bottom: -50px;
+    @include lg-screen {
+      left: 46%;
+    }
+  }
+  .slick-next {
+    background: $white;
+    color: $black;
+    left: 56%;
+    bottom: -50px;
+    background: $primary;
+    color: $white;
+    @include md-screen {
+      left: 50%;
+    }
+  }
+}
+.slick-button {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  background: $white;
+  left: 46%;
+  transition: all 0.3s ease;
+  &:hover {
+    box-shadow: 0 20px 35px rgba($primary, 0.3);
+  }
+}

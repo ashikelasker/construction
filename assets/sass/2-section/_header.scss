@@ -1,0 +1,135 @@
+.l-header {
+  background: transparent;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar-nav {
+  margin-top: 30px;
+}
+
+.hd-list {
+  margin-right: 35px;
+  position: relative;
+  background-color: aliceblue;
+
+  a {
+    color: $primary;
+    position: relative;
+
+    &.active {
+      color: $primary;
+      font-weight: 600;
+      &::after {
+        display: none;
+        @include md-screen {
+          content: "";
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: $primary;
+          display: block;
+          position: absolute;
+          right: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    &:hover {
+      color: $white;
+    }
+  }
+  &:hover {
+    color: $white;
+    background-color: $primary;
+    // border-bottom: 1px solid black;
+    &:last-child {
+      border-bottom: none;
+    }
+    @include md-screen {
+      color: $primary;
+      font-weight: 600;
+    }
+  }
+}
+.counter-item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+  color: $black;
+  z-index: 999;
+
+  &-content {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+.hero-img {
+  img {
+    border-radius: 0 0 0 350px;
+  }
+}
+
+.counter-section-item-1 {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 37px;
+    height: 20px;
+    position: absolute;
+    display: block;
+    background-color: $color-2;
+    border-radius: 20px 20px 0px 0px;
+    transform: rotate(-60deg);
+    top: -6px;
+    left: -10px;
+    z-index: -999;
+  }
+}
+.counter-section-item-2 {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 37px;
+    height: 20px;
+    position: absolute;
+    display: block;
+    background-color: $primary;
+    border-radius: 20px 20px 0px 0px;
+    transform: rotate(-60deg);
+    top: -6px;
+    left: -10px;
+    z-index: -999;
+  }
+}
+.counter-section-item-3 {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 37px;
+    height: 20px;
+    position: absolute;
+    display: block;
+    background-color: $color-1;
+    border-radius: 20px 20px 0px 0px;
+    transform: rotate(-60deg);
+    top: -6px;
+    left: -10px;
+    z-index: -999;
+  }
+}
+.logo-slider {
+  position: relative;
+  background-color: $color-3;
+  width: 100%;
+  border-radius: 100px;
+  margin: 15px;
+  @include md-screen {
+    padding: 60px 0px 60px 150px;
+  }
+}
